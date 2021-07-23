@@ -32,9 +32,9 @@ const restaurantSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      validate: [validator.isAlpha, "Cuisine type cannot contain number"],
+      validate: [validator.isAlpha, "Not a valid cuisine type"],
     },
-    operating_hours: { String },
+    operating_hours: String,
     reviews: [Object],
     ratings: Number,
   },
@@ -48,17 +48,17 @@ restaurantSchema.virtual("pincode").get(function () {
   return this.address.split(" ").reverse()[0];
 });
 
-// restaurantSchema.pre("save", function (next) {
-//   // document middleware
-//   this.ratings = 5;
-//   next();
-// });
+restaurantSchema.pre("save", function (next) {
+  // document middleware
+  this.averageRatings = 5;
+  next();
+});
 
-// restaurantSchema.pre("find", function (next) {
-//   // Query middleware
-//   this.find({ ratings: { $lt: 5 } });
-//   next();
-// });
+restaurantSchema.pre("find", function (next) {
+  // Query middleware
+  this.find({ ratings: { $gt: 1 } });
+  next();
+});
 
 const Restaurants = new mongoose.model("Restaurants", restaurantSchema);
 

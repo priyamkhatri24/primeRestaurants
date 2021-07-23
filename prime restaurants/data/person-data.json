@@ -9,15 +9,7 @@
       "lng": -73.989667
     },
     "cuisine_type": "Asian",
-    "operating_hours": {
-      "Monday": "5:30 pm - 11:00 pm",
-      "Tuesday": "5:30 pm - 12:00 am",
-      "Wednesday": "5:30 pm - 12:00 am",
-      "Thursday": "5:30 pm - 12:00 am",
-      "Friday": "5:30 pm - 12:00 am",
-      "Saturday": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am",
-      "Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm"
-    },
+    "operating_hours": "12:00 am",
     "reviews": [
       {
         "name": "Steve",
@@ -49,15 +41,7 @@
       "lng": -73.966393
     },
     "cuisine_type": "Pizza",
-    "operating_hours": {
-      "Monday": "5:30 pm - 11:00 pm",
-      "Tuesday": "5:30 pm - 11:00 pm",
-      "Wednesday": "5:30 pm - 11:00 pm",
-      "Thursday": "5:30 pm - 11:00 pm",
-      "Friday": "5:30 pm - 11:00 pm",
-      "Saturday": "5:00 pm - 11:30 pm",
-      "Sunday": "12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm"
-    },
+    "operating_hours": "11:30 pm",
     "reviews": [
       {
         "name": "Steph",
@@ -79,46 +63,7 @@
       }
     ]
   },
-  {
-    "name": "Kang Ho Dong Baekjeong",
-    "neighborhood": "Manhattan",
-    "photograph": "https://images.all-free-download.com/images/graphicthumb/food_picture_03_hd_pictures_167556.jpg",
-    "address": "1 E 32nd St, New York, NY 10016",
-    "latlng": {
-      "lat": 40.747143,
-      "lng": -73.985414
-    },
-    "cuisine_type": "Asian",
-    "operating_hours": {
-      "Monday": "11:30 am - 2:00 am",
-      "Tuesday": "11:30 am - 2:00 am",
-      "Wednesday": "11:30 am - 2:00 am",
-      "Thursday": "11:30 am - 2:00 am",
-      "Friday": "11:30 am - 6:00 am",
-      "Saturday": "11:30 am - 6:00 am",
-      "Sunday": "11:30 am - 2:00 am"
-    },
-    "reviews": [
-      {
-        "name": "Steve",
-        "date": "October 26, 2016",
-        "rating": 4,
-        "comments": "The tables at this 32nd Street favorite are outfitted with grills for cooking short ribs, brisket, beef tongue, rib eye, and pork jowl. The banchan plates are uniformly good, and Deuki Hong’s menu also includes winning dishes like stir-fried squid noodles, kimchi stew, and seafood pancakes. If it’s available, make sure to order the kimchi and rice “lunchbox.” Baekjeong is a great place for large groups and birthday parties."
-      },
-      {
-        "name": "ZS",
-        "date": "October 26, 2016",
-        "rating": 5,
-        "comments": "I've been to Korea before and many other Korean BBQ places. We had the regular pork belly and a beef (forgot which cut) and a seafood tofu soup. Two meat and a soup was just prefect for the two of us. We could have done one meat and one soup. The portions of the meat are great! The beef was juicy, tender and so good. The sides were excellent. "
-      },
-      {
-        "name": "Emily",
-        "date": "October 26, 2016",
-        "rating": 2,
-        "comments": "MEH. I've tried their Jersey location as well but Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!"
-      }
-    ]
-  },
+
   {
     "name": "Katz's Delicatessen",
     "neighborhood": "Manhattan",
@@ -129,15 +74,7 @@
       "lng": -73.987501
     },
     "cuisine_type": "American",
-    "operating_hours": {
-      "Monday": "8:00 am - 10:30 pm",
-      "Tuesday": "8:00 am - 10:30 pm",
-      "Wednesday": "8:00 am - 10:30 pm",
-      "Thursday": "8:00 am - 2:30 am",
-      "Friday": "8:00 am - Sat",
-      "Saturday": "Open 24 hours",
-      "Sunday": "Sat - 10:30 pm"
-    },
+    "operating_hours": "10:30 pm",
     "reviews": [
       {
         "name": "Steve",
@@ -169,15 +106,7 @@
       "lng": -73.933585
     },
     "cuisine_type": "Pizza",
-    "operating_hours": {
-      "Monday": "11:00 am - 12:00 am",
-      "Tuesday": "11:00 am - 12:00 am",
-      "Wednesday": "11:00 am - 12:00 am",
-      "Thursday": "11:00 am - 12:00 am",
-      "Friday": "11:00 am - 12:00 am",
-      "Saturday": "10:00 am - 12:00 am",
-      "Sunday": "10:00 am - 12:00 am"
-    },
+    "operating_hours": "12:00 am",
     "reviews": [
       {
         "name": "Steve",
@@ -209,15 +138,7 @@
       "lng": -74.016162
     },
     "cuisine_type": "American",
-    "operating_hours": {
-      "Monday": "Closed",
-      "Tuesday": "12:00 pm - 10:00 pm",
-      "Wednesday": "12:00 pm - 10:00 pm",
-      "Thursday": "12:00 pm - 10:00 pm",
-      "Friday": "12:00 pm - 11:00 pm",
-      "Saturday": "12:00 pm - 11:00 pm",
-      "Sunday": "12:00 pm - 9:00 pm"
-    },
+    "operating_hours": "10:00 pm",
     "reviews": [
       {
         "name": "Steve",
@@ -240,6 +161,38 @@
     ]
   },
   {
+    "name": "Kang Ho Dong Baekjeong",
+    "neighborhood": "Manhattan",
+    "photograph": "https://images.all-free-download.com/images/graphicthumb/food_picture_03_hd_pictures_167556.jpg",
+    "address": "1 E 32nd St, New York, NY 10016",
+    "latlng": {
+      "lat": 40.747143,
+      "lng": -73.985414
+    },
+    "cuisine_type": "Asian",
+    "operating_hours": "2:00 am",
+    "reviews": [
+      {
+        "name": "Steve",
+        "date": "October 26, 2016",
+        "rating": 4,
+        "comments": "The tables at this 32nd Street favorite are outfitted with grills for cooking short ribs, brisket, beef tongue, rib eye, and pork jowl. The banchan plates are uniformly good, and Deuki Hong’s menu also includes winning dishes like stir-fried squid noodles, kimchi stew, and seafood pancakes. If it’s available, make sure to order the kimchi and rice “lunchbox.” Baekjeong is a great place for large groups and birthday parties."
+      },
+      {
+        "name": "ZS",
+        "date": "October 26, 2016",
+        "rating": 5,
+        "comments": "I've been to Korea before and many other Korean BBQ places. We had the regular pork belly and a beef (forgot which cut) and a seafood tofu soup. Two meat and a soup was just prefect for the two of us. We could have done one meat and one soup. The portions of the meat are great! The beef was juicy, tender and so good. The sides were excellent. "
+      },
+      {
+        "name": "Emily",
+        "date": "October 26, 2016",
+        "rating": 2,
+        "comments": "MEH. I've tried their Jersey location as well but Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!"
+      }
+    ]
+  },
+  {
     "name": "Superiority Burger",
     "neighborhood": "Manhattan",
     "photograph": "https://images.all-free-download.com/images/graphicthumb/delicious_food_02_hd_pictures_167552.jpg",
@@ -249,15 +202,7 @@
       "lng": -73.983645
     },
     "cuisine_type": "American",
-    "operating_hours": {
-      "Monday": "11:30 am - 10:00 pm",
-      "Tuesday": "Closed",
-      "Wednesday": "11:30 am - 10:00 pm",
-      "Thursday": "11:30 am - 10:00 pm",
-      "Friday": "11:30 am - 10:00 pm",
-      "Saturday": "11:30 am - 10:00 pm",
-      "Sunday": "11:30 am - 10:00 pm"
-    },
+    "operating_hours": "10:00 pm",
     "reviews": [
       {
         "name": "Steve",
@@ -289,15 +234,7 @@
       "lng": -74.002082
     },
     "cuisine_type": "American",
-    "operating_hours": {
-      "Monday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
-      "Tuesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
-      "Wednesday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
-      "Thursday": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
-      "Friday": "11:30 am - 3:00 pm, 5:30 pm - 11:30 pm",
-      "Saturday": "10:00 am - 3:00 pm, 5:30 pm - 11:30 pm",
-      "Sunday": "10:00 am - 3:00 pm, 5:30 pm - 11:00 pm"
-    },
+    "operating_hours": "11:00 pm",
     "reviews": [
       {
         "name": "Steve",
@@ -329,15 +266,7 @@
       "lng": -73.950652
     },
     "cuisine_type": "Asian",
-    "operating_hours": {
-      "Monday": "5:00 pm - 10:00 pm",
-      "Tuesday": "5:00 pm - 10:00 pm",
-      "Wednesday": "5:00 pm - 10:00 pm",
-      "Thursday": "5:00 pm - 10:00 pm",
-      "Friday": "5:00 pm - 11:00 pm",
-      "Saturday": "5:00 pm - 11:00 pm",
-      "Sunday": "5:00 pm - 10:00 pm"
-    },
+    "operating_hours": "10:55 pm",
     "reviews": [
       {
         "name": "Steve",
@@ -369,15 +298,7 @@
       "lng": -73.954235
     },
     "cuisine_type": "Mexican",
-    "operating_hours": {
-      "Monday": "5:00 pm - 12:00 am",
-      "Tuesday": "5:00 pm - 12:00 am",
-      "Wednesday": "5:00 pm - 12:00 am",
-      "Thursday": "5:00 pm - 12:00 am",
-      "Friday": "5:00 pm - 12:00 am",
-      "Saturday": "11:00 am - 12:00 am",
-      "Sunday": "11:00 am - 12:00 am"
-    },
+    "operating_hours": "12:00 am",
     "reviews": [
       {
         "name": "Steve",

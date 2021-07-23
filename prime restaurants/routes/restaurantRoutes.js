@@ -11,7 +11,7 @@ restaurantRouter
 
 restaurantRouter
   .route("/")
-  .get(restaurantController.protect, restaurantController.getAllRestaurants)
+  .get(restaurantController.getAllRestaurants)
   .post(restaurantController.addNewRestaurant);
 restaurantRouter
   .route("/:id")

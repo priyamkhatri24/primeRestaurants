@@ -7,8 +7,12 @@ dotenv.config({ path: `${__dirname}/../config.env` });
 console.log(process.env.DATABASE_LOCAL);
 
 const data = fs.readFileSync(`${__dirname}/person-data.json`, "utf-8");
+const DB = process.env.DATABASE_URL.replace(
+  "<password>",
+  process.env.DATABASE_PASSWORD
+);
 mongoose
-  .connect(process.env.DATABASE_LOCAL, {
+  .connect(DB, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
@@ -16,25 +20,18 @@ mongoose
   })
   .then(() => {
     console.log("Connected with database");
-    if (process.argv[2] === "--import") {
-      updateAll();
-    }
-    if (process.argv[2] === "--delete") {
-      deleteAll();
-    }
   })
   .catch((err) => console.log(err));
 
-const deleteAll = async (req, res) => {
+const deleteAll = async () => {
   try {
-    const restaurants = await Restaurants.deleteMany({});
-    res.send(restaurants);
+    await Restaurants.deleteMany();
   } catch (err) {
-    res.send(err);
+    console.log(err);
   }
+  process.exit();
 };
-
-const updateAll = async (req, res) => {
+const updateAll = async () => {
   console.log("running....");
   const dataArray = JSON.parse(data);
   dataArray.forEach((el) => {
@@ -44,10 +41,29 @@ const updateAll = async (req, res) => {
   });
   // console.log(dataArray[0]);
   try {
-    const rest = await Restaurants.create(dataArray);
-    console.log("sent");
-    res.send(rest);
+    await Restaurants.create(...dataArray);
+    console.log("data saved to db");
   } catch (err) {
-    console.log("err");
+    console.log(err);
+  }
+  process.exit();
+};
+
+const getData = async () => {
+  try {
+    const data = await Restaurants.find();
+    console.log(data);
+  } catch (err) {
+    console.log("err getting data");
   }
 };
+
+if (process.argv[2] === "--import") {
+  updateAll();
+}
+if (process.argv[2] === "--delete") {
+  deleteAll();
+}
+if (process.argv[2] === "--get") {
+  getData();
+}

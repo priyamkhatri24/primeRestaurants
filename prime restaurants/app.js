@@ -1,5 +1,4 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const AppError = require("./utils/appError");
 const globalErrorController = require("./controllers/globalErrorController");
 const helmet = require("helmet");
@@ -28,18 +27,6 @@ const limiter = rateLimit({
   message: "Too many requests from this IP. Please try in an hour",
 });
 app.use("/api", limiter);
-
-mongoose
-  .connect(process.env.DATABASE_LOCAL, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Connected with database");
-  })
-  .catch((err) => console.log(err));
 
 app.use("/api/user", userRouter);
 app.use("/api/restaurants", restaurantRouter);
